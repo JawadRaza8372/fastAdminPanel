@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Dashboard from "./pages/dashboard/Dashboard";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, Link } from "react-router-dom";
 // import FAQ from './pages/verification/Verification'
 import Login from "./pages/login/Login";
 // import Signup from "./pages/signup/Signup";
@@ -139,10 +139,26 @@ const App = () => {
 				<Route
 					path='*'
 					element={
-						<h1 style={{ color: "#3d3d3d", marginTop: "20%" }}>
-							{" "}
-							Page Not Found{" "}
-						</h1>
+						<div
+							style={{
+								width: "100%",
+								height: "100%",
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "center",
+								flexDirection: "column",
+							}}>
+							<h1 style={{ color: "#3d3d3d", marginTop: "20%" }}>
+								{" "}
+								Page Not Found{" "}
+							</h1>
+							<Link
+								to='/'
+								className='btn'
+								style={{ background: "black", color: "white" }}>
+								Home
+							</Link>
+						</div>
 					}
 				/>
 			</Routes>
