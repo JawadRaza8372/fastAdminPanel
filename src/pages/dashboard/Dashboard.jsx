@@ -4,7 +4,6 @@ import Topbar from "../../layout/topbar/Topbar";
 import Sidebar from "../../layout/sidebar/Sidebar";
 import Card from "./Card";
 import SearchIcon from "@mui/icons-material/Search";
-import { Data } from "./cardApi";
 import { useSelector } from "react-redux";
 
 // import { collection, getDocs } from "firebase/firestore"
